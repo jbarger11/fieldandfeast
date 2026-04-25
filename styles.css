@@ -305,9 +305,40 @@ footer ul li a {
 }
 
 /* MEDIA QUERY (large) */
+@media screen and (min-width: 900px) {
+  /*--- Gallery ---*/
+  #gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /* MEDIA QUERY (x1) */
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
+  /*--- Nav ---*/
+  nav ul {
+    justify-content: center;
+    gap: 80px;
+  }
+
+  /*--- Offerings ---*/
+  #offerings {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*--- Gallery ---*/
+  #gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #gallery figure:last-of-type {
+    grid-column: auto;
+  }
+}
 
 
 
